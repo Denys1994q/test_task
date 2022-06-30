@@ -1,0 +1,19 @@
+@import './variables';
+
+.btn {
+    min-width: 100px;
+    color: rgba(0, 0, 0, 0.87);;
+    text-align: center;
+    transition: 0.3s transform;
+    border: none;
+    border-radius: 80px;
+    background-color: $main-color;
+    cursor: pointer;
+    &:hover {
+        background-color: #FFE302;
+    }
+    &:disabled {
+        background-color: #B4B4B4;
+        color: rgba(255, 255, 255, 0.87);
+    }
+}

@@ -1,0 +1,96 @@
+.workers {
+  &-wrapper {
+    background-color: #E5E5E5;
+    padding-bottom: 140px;
+  }
+  &-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 140px;
+  }
+  &-inner {
+    margin-bottom: 50px;
+    svg {
+      display: block;
+      margin: 0 auto;
+    }
+    &-heading {
+      margin-bottom: 50px;
+      font-family: 'Nunito';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 40px;
+      color: rgba(0, 0, 0, 0.87);
+    }
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      &-list {
+        display: grid;
+        grid-template-columns: repeat(3, 380px);
+        column-gap: 30px;
+        row-gap: 30px;
+        &-item {
+          background-color: #FFFFFF;
+          border-radius: 10px;
+          padding: 20px;
+          font-family: 'Nunito';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 26px;
+          color: rgba(0, 0, 0, 0.87);
+          & img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50px;
+            object-fit: contain;
+            margin-bottom: 20px;
+          }
+          &-name {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.btn-center {
+  margin: 0 auto;
+}
+
+// 1225px
+@media screen and (max-width: 1225px){
+    .workers-inner-wrapper-list {
+      grid-template-columns: repeat(3, 282px);
+    }
+    .header-container {
+      padding: 13px 13px;
+    }
+}
+@media screen and (max-width: 925px){
+  .workers-inner-wrapper-list {
+    grid-template-columns: repeat(2, 344px);
+    row-gap: 16px;
+    column-gap: 16px;
+  }
+}
+@media screen and (max-width: 730px){
+  .workers-inner-wrapper-list {
+    grid-template-columns: repeat(2, 274px);
+  }
+}
+@media screen and (max-width: 590px){
+  .workers-inner-wrapper-list {
+    grid-template-columns: repeat(1, 328px);
+  }
+}
+@media screen and (max-width: 400px){
+  .workers-inner-wrapper-list {
+    grid-template-columns: repeat(1, 328px);
+    row-gap: 20px;
+  }
+}
